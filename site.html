@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Support Marvin S. as he works toward getting the tools needed to build websites and digital solutions for entrepreneurs and small businesses."
+  >
+
+  <title>Support the Build | Marvin S.</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --background: #070b10;
+      --card: #101720;
+      --card-light: #151f2a;
+      --text: #ffffff;
+      --muted: #a8b3c0;
+      --green: #00d632;
+      --green-dark: #00ad29;
+      --border: rgba(255,255,255,0.09);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(760px, 92%);
+      margin: 0 auto;
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .support-small {
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(0,214,50,0.12),
+          transparent 45%
+        );
+    }
+
+    .label {
+      display: inline-block;
+      padding: 7px 13px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(0,214,50,0.25);
+      border-radius: 50px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: clamp(42px, 10vw, 70px);
+      line-height: 0.98;
+      letter-spacing: -3px;
+    }
+
+    .hero-text {
+      max-width: 590px;
+      margin: 25px auto 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    /* PRIMARY BUTTON */
+
+    .support-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 430px;
+      min-height: 60px;
+      margin-top: 30px;
+      padding: 15px 25px;
+      border-radius: 15px;
+      background: var(--green);
+      color: #031006;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 15px 40px rgba(0,214,50,0.18);
+      transition: 0.2s ease;
+    }
+
+    .support-button:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+    }
+
+    .cash-tag {
+      margin-top: 12px;
+      color: #788594;
+      font-size: 14px;
+    }
+
+    /* MAIN CARD */
+
+    .main-card {
+      margin: 20px auto 0;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--card);
+    }
+
+    .main-card h2 {
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+
+    .main-card p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* IMPACT */
+
+    .impact {
+      padding: 35px 0;
+    }
+
+    .section-title {
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: var(--green);
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .impact-flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .impact-item {
+      display: flex;
+      gap: 17px;
+      align-items: flex-start;
+      padding: 20px;
+      border-radius: 17px;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+
+    .number {
+      flex: 0 0 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: rgba(0,214,50,0.12);
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .impact-item h3 {
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    .impact-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* STORY */
+
+    .story {
+      padding: 45px 0;
+    }
+
+    .story-card {
+      padding: 32px;
+      border-radius: 24px;
+      background: var(--card-light);
+      border: 1px solid var(--border);
+    }
+
+    .story-card h2 {
+      margin-bottom: 17px;
+      font-size: 28px;
+    }
+
+    .story-card p {
+      margin-bottom: 15px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .story-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* VISION */
+
+    .vision {
+      padding: 20px 0 55px;
+      text-align: center;
+    }
+
+    .vision h2 {
+      font-size: 32px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .vision p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* FINAL CTA */
+
+    .final-cta {
+      padding: 55px 0 75px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(0,214,50,0.10),
+          transparent 65%
+        );
+    }
+
+    .final-cta h2 {
+      font-size: clamp(34px, 8vw, 52px);
+      line-height: 1.05;
+      margin-bottom: 15px;
+    }
+
+    .final-cta p {
+      max-width: 570px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    /* TRANSPARENCY */
+
+    .transparency {
+      padding: 25px 0 55px;
+      text-align: center;
+    }
+
+    .transparency p {
+      max-width: 600px;
+      margin: auto;
+      color: #74808d;
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 25px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #65717e;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 500px) {
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .main-card,
+      .story-card {
+        padding: 25px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="brand">Marvin S.</div>
+
+      <a
+        class="support-small"
+        href="https://cash.app/$letsgoup1047"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Support →
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <div class="label">
+        Building From the Ground Up
+      </div>
+
+      <h1>
+        Help Me Build a Better Future.
+      </h1>
+
+      <p class="hero-text">
+        I'm starting over and building from my phone.
+        My first goal is getting the tools I need to create
+        websites and digital solutions that can help other people
+        build something of their own.
+      </p>
+
+      <a
+        class="support-button"
+        href="https://cash.app/$letsgoup1047"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💚 Support Me
+      </a>
+
+      <div class="cash-tag">
+        Cash App: $letsgoup1047
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- WHAT SUPPORT SOLVES -->
+
+  <section class="container">
+
+    <div class="main-card">
+
+      <h2>What does your support solve?</h2>
+
+      <p>
+        My immediate goal is to obtain a laptop. Working from a phone
+        limits what I can build and how efficiently I can work.
+        A laptop would give me the tools to learn, develop, research,
+        and create at a much higher level.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- IMPACT -->
+
+  <section class="impact">
+
+    <div class="container">
+
+      <div class="section-title">
+        Where this can lead
+      </div>
+
+      <div class="impact-flow">
+
+        <div class="impact-item">
+
+          <div class="number">1</div>
+
+          <div>
+            <h3>Get the tools</h3>
+
+            <p>
+              Work toward a laptop and a better environment
+              for development.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="impact-item">
+
+          <div class="number">2</div>
+
+          <div>
+            <h3>Build more</h3>
+
+            <p>
+              Create websites, learn new technology, and turn
+              ideas into working projects.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="impact-item">
+
+          <div class="number">3</div>
+
+          <div>
+            <h3>Help others build</h3>
+
+            <p>
+              Work toward a platform serving entrepreneurs,
+              small businesses, and local restaurants.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STORY -->
+
+  <section class="story">
+
+    <div class="container">
+
+      <div class="story-card">
+
+        <h2>A little about me</h2>
+
+        <p>
+          I'm Marvin S., 37 years old, and I'm rebuilding my life.
+          I've made mistakes in my past, including serving time,
+          but I'm focused on moving forward positively.
+        </p>
+
+        <p>
+          Right now I'm working with what I have, learning and
+          creating directly from my phone.
+        </p>
+
+        <p>
+          I love music and exploring new places. If you see me
+          walking around listening to music, I'm probably enjoying
+          the moment or thinking about a way to create something
+          that could make life better.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VISION -->
+
+  <section class="vision">
+
+    <div class="container">
+
+      <h2>
+        Build something that helps other people build.
+      </h2>
+
+      <p>
+        The long-term vision is an established platform that helps
+        people bring their businesses and ideas online.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL SUPPORT -->
+
+  <section class="final-cta">
+
+    <div class="container">
+
+      <h2>
+        Want to help me take the next step?
+      </h2>
+
+      <p>
+        Every contribution is voluntary and appreciated.
+        Your support can help provide equipment and other
+        resources needed to keep building.
+      </p>
+
+      <a
+        class="support-button"
+        href="https://cash.app/$letsgoup1047"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💚 Support via Cash App
+      </a>
+
+      <div class="cash-tag">
+        $letsgoup1047
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRANSPARENCY -->
+
+  <section class="transparency">
+
+    <div class="container">
+
+      <p>
+        Support is voluntary. Contributions are intended to help
+        with equipment, development, hosting, and other project
+        expenses as the platform is built.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+      © 2026 Marvin S. · Building from the ground up.
+    </div>
+
+  </footer>
+
+</body>
+</html>
