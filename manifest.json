@@ -1,0 +1,23 @@
+{
+  "name": "WebBuild Intake",
+  "short_name": "WebBuild",
+  "description": "A simple intake app for collecting webpage project requests.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080b10",
+  "theme_color": "#080b10",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
