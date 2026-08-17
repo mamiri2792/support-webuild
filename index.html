@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#07080c"
+  >
+
+  <meta
+    name="description"
+    content="WebBuild helps entrepreneurs, small businesses, creators, and organizations turn ideas into clear website projects."
+  >
+
+  <meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  >
+
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  >
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="WebBuild"
+  >
+
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
+
+  <link
+    rel="icon"
+    href="icon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <title>WebBuild — Start Your Website Project</title>
+</head>
+
+
+<body>
+
+  <main class="app">
+
+    <!-- =================================
+         HEADER
+    ================================== -->
+
+    <header class="header">
+
+      <div
+        class="brand"
+        aria-label="WebBuild"
+      >
+        WebBuild
+      </div>
+
+      <div
+        class="step-counter"
+        aria-live="polite"
+      >
+        <span id="stepNumber">1</span>
+        <span>of</span>
+        <span id="totalSteps">5</span>
+      </div>
+
+    </header>
+
+
+    <!-- =================================
+         PROGRESS
+    ================================== -->
+
+    <div
+      class="progress-container"
+      aria-hidden="true"
+    >
+
+      <div
+        id="progressBar"
+        class="progress-bar"
+      ></div>
+
+    </div>
+
+
+    <!-- =================================
+         INTRO
+    ================================== -->
+
+    <section
+      id="introScreen"
+      class="screen active"
+      aria-labelledby="introTitle"
+    >
+
+      <div class="eyebrow">
+        WEB PROJECT INTAKE
+      </div>
+
+      <h1 id="introTitle">
+        Your idea deserves a home on the web.
+      </h1>
+
+      <p class="intro-text">
+        Tell us what you're building, who you're
+        trying to reach, and what you want your
+        website to accomplish.
+      </p>
+
+      <button
+        id="startButton"
+        class="primary-button"
+        type="button"
+      >
+        Start Your Project
+
+        <span aria-hidden="true">
+          →
+        </span>
+      </button>
+
+      <p class="time-note">
+        About 2 minutes · No technical knowledge required
+      </p>
+
+    </section>
+
+
+    <!-- =================================
+         PROJECT INTAKE FORM
+    ================================== -->
+
+    <form
+      id="intakeForm"
+      class="screen"
+      action="https://formsubmit.co/letsgoup1047@gmail.com"
+      method="POST"
+      accept-charset="UTF-8"
+    >
+
+      <!-- =================================
+           FORMSUBMIT CONFIGURATION
+      ================================== -->
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="WEBBUILD — New Website Project Brief"
+      >
+
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+      >
+
+      <input
+        type="hidden"
+        name="_template"
+        value="table"
+      >
+
+
+      <!-- =================================
+           QUESTION 1
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="1"
+        aria-labelledby="questionOneTitle"
+      >
+
+        <div class="question-label">
+          STEP 01
+        </div>
+
+        <h2 id="questionOneTitle">
+          What are we building?
+        </h2>
+
+        <p class="question-help">
+          Choose the type of webpage that best fits
+          your idea.
+        </p>
+
+
+        <div class="options">
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="Landing Page"
+              required
+            >
+
+            <span>
+              Landing Page
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="Business Website"
+            >
+
+            <span>
+              Business Website
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="E-commerce Website"
+            >
+
+            <span>
+              Online Store
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="Portfolio"
+            >
+
+            <span>
+              Portfolio
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="Information Website"
+            >
+
+            <span>
+              Information Website
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Page Type"
+              value="Something Else"
+            >
+
+            <span>
+              Something Else
+            </span>
+
+          </label>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="primary-button next-button"
+        >
+          Continue
+
+          <span aria-hidden="true">
+            →
+          </span>
+        </button>
+
+      </section>
+
+
+      <!-- =================================
+           QUESTION 2
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="2"
+        aria-labelledby="questionTwoTitle"
+      >
+
+        <div class="question-label">
+          STEP 02
+        </div>
+
+        <h2 id="questionTwoTitle">
+          What should it accomplish?
+        </h2>
+
+        <p class="question-help">
+          What's the most important result you want
+          from your website?
+        </p>
+
+
+        <div class="options">
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Main Goal"
+              value="Sell products or items"
+              required
+            >
+
+            <span>
+              Sell products or items
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Main Goal"
+              value="Introduce my brand"
+            >
+
+            <span>
+              Introduce my brand
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Main Goal"
+              value="Generate leads or customers"
+            >
+
+            <span>
+              Generate leads or customers
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Main Goal"
+              value="Promote a service"
+            >
+
+            <span>
+              Promote a service
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="Main Goal"
+              value="Share information"
+            >
+
+            <span>
+              Share information
+            </span>
+
+          </label>
+
+        </div>
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            class="secondary-button back-button"
+          >
+            Back
+          </button>
+
+          <button
+            type="button"
+            class="primary-button next-button"
+          >
+            Continue
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           QUESTION 3
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="3"
+        aria-labelledby="questionThreeTitle"
+      >
+
+        <div class="question-label">
+          STEP 03
+        </div>
+
+        <h2 id="questionThreeTitle">
+          What are you offering?
+        </h2>
+
+        <p class="question-help">
+          Tell us about your business, product, service,
+          organization, project, or idea.
+        </p>
+
+
+        <textarea
+          name="What They Offer"
+          rows="7"
+          maxlength="1500"
+          placeholder="Example: I run a local restaurant that specializes in..."
+          required
+          aria-label="What you offer"
+        ></textarea>
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            class="secondary-button back-button"
+          >
+            Back
+          </button>
+
+          <button
+            type="button"
+            class="primary-button next-button"
+          >
+            Continue
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           QUESTION 4
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="4"
+        aria-labelledby="questionFourTitle"
+      >
+
+        <div class="question-label">
+          STEP 04
+        </div>
+
+        <h2 id="questionFourTitle">
+          Who are you trying to reach?
+        </h2>
+
+        <p class="question-help">
+          Describe the people you want your website
+          to connect with.
+        </p>
+
+
+        <textarea
+          name="Target Audience"
+          rows="7"
+          maxlength="1500"
+          placeholder="Example: Local customers, homeowners, music fans, small businesses..."
+          required
+          aria-label="Target audience"
+        ></textarea>
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            class="secondary-button back-button"
+          >
+            Back
+          </button>
+
+          <button
+            type="button"
+            class="primary-button next-button"
+          >
+            Continue
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           QUESTION 5
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="5"
+        aria-labelledby="questionFiveTitle"
+      >
+
+        <div class="question-label">
+          STEP 05
+        </div>
+
+        <h2 id="questionFiveTitle">
+          What problem do you solve?
+        </h2>
+
+        <p class="question-help">
+          What benefits, solutions, results, or value
+          should visitors understand?
+        </p>
+
+
+        <textarea
+          name="Benefits and Solutions"
+          rows="7"
+          maxlength="1500"
+          placeholder="Tell us what makes your product, service, or idea valuable..."
+          required
+          aria-label="Benefits and solutions"
+        ></textarea>
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            class="secondary-button back-button"
+          >
+            Back
+          </button>
+
+          <button
+            type="button"
+            class="primary-button next-button"
+          >
+            Continue
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           CONTACT
+      ================================== -->
+
+      <section
+        class="question"
+        data-question="6"
+        aria-labelledby="contactTitle"
+      >
+
+        <div class="question-label">
+          ALMOST THERE
+        </div>
+
+        <h2 id="contactTitle">
+          Where should we send your project brief?
+        </h2>
+
+        <p class="question-help">
+          Give us your contact information so we can
+          identify your request and follow up.
+        </p>
+
+
+        <label
+          class="field-label"
+          for="name"
+        >
+          Your name
+        </label>
+
+        <input
+          id="name"
+          type="text"
+          name="Name"
+          placeholder="Your name"
+          autocomplete="name"
+          maxlength="100"
+          required
+        >
+
+
+        <label
+          class="field-label"
+          for="email"
+        >
+          Your email
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          name="Email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          maxlength="254"
+          required
+        >
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            class="secondary-button back-button"
+          >
+            Back
+          </button>
+
+          <button
+            type="button"
+            id="reviewButton"
+            class="primary-button"
+          >
+            Review Project
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           REVIEW / PROJECT BRIEF
+      ================================== -->
+
+      <section
+        id="reviewScreen"
+        class="question"
+        aria-labelledby="reviewTitle"
+      >
+
+        <div class="question-label">
+          PROJECT BRIEF
+        </div>
+
+        <h2 id="reviewTitle">
+          Here's what we're building.
+        </h2>
+
+        <p class="question-help">
+          Review your answers. You can edit anything
+          before sending your request.
+        </p>
+
+
+        <div
+          id="reviewContent"
+          class="review-content"
+          aria-live="polite"
+        ></div>
+
+
+        <div class="navigation">
+
+          <button
+            type="button"
+            id="editButton"
+            class="secondary-button"
+          >
+            Edit
+          </button>
+
+          <button
+            type="submit"
+            class="primary-button"
+          >
+            Send Project Brief
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+    </form>
+
+
+    <!-- =================================
+         SUCCESS
+    ================================== -->
+
+    <section
+      id="successScreen"
+      class="screen"
+      aria-labelledby="successTitle"
+    >
+
+      <div
+        class="success-icon"
+        aria-hidden="true"
+      >
+        ✓
+      </div>
+
+      <div class="eyebrow">
+        REQUEST RECEIVED
+      </div>
+
+      <h1 id="successTitle">
+        Your idea is on its way.
+      </h1>
+
+      <p class="intro-text">
+        Thanks for sharing your project. Your website
+        brief has been submitted for review.
+      </p>
+
+
+      <button
+        id="newRequestButton"
+        class="primary-button"
+        type="button"
+      >
+        Start Another Project
+      </button>
+
+    </section>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+      WebBuild · Turning ideas into web projects
+    </footer>
+
+  </main>
+
+
+  <!-- =================================
+       JAVASCRIPT
+  ================================== -->
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
